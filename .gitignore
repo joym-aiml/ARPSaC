@@ -1,0 +1,74 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+venv/
+.venv/
+.env/
+.envrc
+*.env
+arpsac/
+.arpsac/
+venv/
+__pycache__/
+*.pyc
+*.pkl
+*.pt
+*.bin
+*.dll
+*.lib
+*.so
+.DS_Store
+.ipynb_checkpoints/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Firebase/Secrets (make sure these are not accidentally pushed)
+config/firebase_credentials.json
+*.key
+*.pem
+*.secret
+
+# Binary model weights (large files)
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.joblib
+*.npy
+*.npz
+
+# Vector DB indexes (can be re-built or separately hosted)
+storage/faiss_index/
+storage/*.npy
+
+# System/IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ADK Cache
+.adk/
+adk_config/.adk_cache/
+
+# Streamlit
+.streamlit/
+
+# Coverage/Test artifacts
+coverage/
+htmlcov/
+*.cover
+*.py,cover
+
+# Build / dist artifacts
+build/
+dist/
+*.egg-info/
+
+config/firebase_credentials.json
+*.dll
+*.lib

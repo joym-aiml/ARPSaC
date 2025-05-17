@@ -1,0 +1,40 @@
+# requirements.txt
+
+# Core
+python-dotenv
+loguru
+
+# NLP & Transformers
+transformers
+sentence-transformers
+torch
+datasets
+scikit-learn
+sentencepiece
+
+# Vector DB
+faiss-cpu
+
+# Google Firestore
+firebase-admin
+
+# ADK (Google Agentic Dev Kit)
+google-adk
+
+# Jupyter & Experimentation
+jupyterlab
+ipykernel
+notebook
+
+# Streamlit UI
+streamlit
+
+# Others
+tqdm
+requests
+pandas
+
+#Evaluations
+evaluate
+bert-score
+rouge_score
