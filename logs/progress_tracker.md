@@ -36,4 +36,57 @@
 ## 📌 Reflection
 
 Today marked a shift from infrastructure setup to hands-on experimentation. The model evaluation framework is now in place, enabling future iterations to focus on pipeline integration and performance tuning.
+
 ---
+---
+---
+
+# 📅 Daily Progress Tracker — {today}
+
+**Project:** ARPSaC — Agentic AI for Automated Research Paper Summarization and Critique  
+**Focus Area:** Summarization and Paper Retrieval Agent Implementation (ADK-Compatible)
+
+---
+
+## ✅ Key Accomplishments
+
+- 🎯 Finalized understanding of ADK agent model (BaseAgent, InvocationContext, Event)
+- 🧠 Deep walkthrough of the full SummarizeAgent using `flan-t5-small`
+- 🔧 Built ADK-compatible FetchPaperAgent with arXiv API integration
+- 📦 Stored structured search results in `session.state["search_results"]`
+- 💬 Generated clean output messages summarizing fetched paper titles
+- 🔗 Designed session memory fields to enable multi-agent communication
+
+---
+
+## 🧩 Architecture Progress
+
+- [x] `SummarizeAgent` implemented and yielding ADK events
+- [x] `FetchPaperAgent` fetching real papers from arXiv based on user queries
+- [x] Session state structure defined for paper lists, selection, and summary chaining
+- [x] Planned `SelectionAgent` and `FetchDetailAgent` to follow next
+
+---
+
+## 🧠 Lessons Learned
+
+- ADK agents are stateful, asynchronous, and event-yielding by design
+- arXiv API requires XML parsing and proper namespacing for metadata
+- Modularizing agents using `session.state` leads to clean orchestration
+- It's critical to separate interactive steps (fetch vs select vs process)
+
+---
+
+## 🚧 Blockers / Pending
+
+- [ ] User selection interface (or simulated selection for testing)
+- [ ] Detail fetch agent using arXiv paper ID
+- [ ] Full pipeline runner for: query ➝ list ➝ select ➝ summarize
+
+---
+
+## 🧭 Next Step
+
+Start implementation of `SelectionAgent`, which will enable the user to choose one paper from the search results to be processed further by downstream agents.
+
+"""
