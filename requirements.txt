@@ -33,6 +33,9 @@ streamlit
 tqdm
 requests
 pandas
+PyMuPDF
+fastapi
+uvicorn
 
 #Evaluations
 evaluate
